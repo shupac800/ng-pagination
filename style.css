@@ -1,0 +1,15 @@
+span{
+  padding-right:5px;
+  margin-right:5px;
+}
+
+.pn{
+  color: red;
+  cursor: pointer;
+}
+
+.pn:hover{
+  border: 1px solid #F00;
+  border-radius: 100%;
+  background-color: #EEE;
+}
