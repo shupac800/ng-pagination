@@ -1,6 +1,5 @@
 span{
-  padding-right:5px;
-  margin-right:5px;
+
 }
 
 .pn{
@@ -14,9 +13,8 @@ span{
 
 .prepn {
   display: inline-block;
-  text-align: center;
-  height: 19px;
-  width: 19px;
+  margin: 3px;
+
 }
 
 .pn:hover{
