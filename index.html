@@ -11,19 +11,19 @@
 <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
  </head>
-<body data-ng-app="pag-test" data-ng-controller="pagCtrl">
-  <table data-ng-cloak>
+<body data-ng-app="pag-test" data-ng-controller="pagCtrl" data-ng-cloak>
+  <table>
     <tr data-ng-repeat="row in rows | filter:myFilter()">
       <td>{{row.lname}}</td>
       <td>{{row.docket}}</td>
     </tr>
   </table>
   <div id="pagination">
-    <span style="padding-right:5px">page &lt;</span>
-      <span data-ng-repeat="page in pages" class="pn" data-ng-click="goToPage($index)">
+    <span class="prepn">page &lt;</span>
+      <div data-ng-repeat="page in pages" class={{pcolor[$index]}} data-ng-click="goToPage($index)">
         {{page}}
-      </span>
-      <span style="padding-left:5px">&gt;</span>
+      </div>
+      <span class="prepn">&gt;</span>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
